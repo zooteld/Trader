@@ -1221,7 +1221,7 @@ bool WalletLegacy::getTxProof(Crypto::Hash& txid, CryptoNote::AccountPublicAddre
     Crypto::generate_tx_proof(txid, R, address.viewPublicKey, rA, tx_key, sig);
   }
   catch (const std::runtime_error &e) {
-    //m_loggerGroup("WalletLegacy", INFO, boost::posix_time::second_clock::local_time(), "Proof generation error: " + *e.what());
+    throw std::runtime_error( "Proof generation error: " + *e.what());
     return false;
   }
 

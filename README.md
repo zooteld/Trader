@@ -29,7 +29,7 @@ Trader is open-source, community driven and truly decentralized. No one owns it,
 #### Building
 
 - `git clone https://github.com/zooteld/Trader.git
-- `cd trader`
+- `cd Trader`
 - `mkdir build && cd $_`
 - `cmake ..`
 - `make`

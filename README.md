@@ -1,45 +1,35 @@
-![image](https://github.com/ConcealNetwork/conceal-assets/blob/master/splash.png)
-
-#### Master Build Status
-[![Build Status](https://travis-ci.org/ConcealNetwork/conceal-core.svg?branch=master)](https://travis-ci.org/ConcealNetwork/conceal-core) [![Build status](https://ci.appveyor.com/api/projects/status/github/concealnetwork/conceal-core?branch=master&svg=true)](https://ci.appveyor.com/project/cryptokatz/conceal-core)
-
-#### Development Build Status
-[![Build Status](https://travis-ci.org/ConcealNetwork/conceal-core.svg?branch=dev)](https://travis-ci.org/ConcealNetwork/conceal-core) [![Build status](https://ci.appveyor.com/api/projects/status/github/concealnetwork/conceal-core?branch=dev&svg=true)](https://ci.appveyor.com/project/cryptokatz/conceal-core)
-
-# Conceal Core (CLI)
-Latest Release: v5.3.4
-Maintained by The Circle Team.
+# Trader (CLI)
+Latest Release: v1.0
+Maintained by Team-COD.
 
 ## Information
-Conceal is a decentralized banking platform with encrypted messages and own privacy protected cryptocurrency.
+Trader is a decentralized banking platform with encrypted messages and own privacy protected cryptocurrency.
 
-Conceal is based on the Cryptonote protocol and runs on a secure peer-to-peer network technology to operate with no central authority. You control your private keys to your funds, you control your destiny. Conceal Network is accessible by anyone in the world regardless of his/her geographic location or status. Our blockchain is resistant to any kind of analysis. All your CCX transactions and messages are anonymous. Conceal Network provides an instant secure, untraceable and unlinkable way of encrypted communication - crypto messages.
+Trader is based on the Cryptonote protocol and runs on a secure peer-to-peer network technology to operate with no central authority. You control your private keys to your funds, you control your destiny. Trader Network is accessible by anyone in the world regardless of his/her geographic location or status. Our blockchain is resistant to any kind of analysis. All your CCX transactions and messages are anonymous. Trader Network provides an instant secure, untraceable and unlinkable way of encrypted communication - crypto messages.
 
-Conceal is open-source, community driven and truly decentralized. No one owns it, everyone can take part.
+Trader is open-source, community driven and truly decentralized. No one owns it, everyone can take part.
 
 ## Resources
-- Web: [conceal.network](https://conceal.network/)
-- GitHub: [https://github.com/ConcealNetwork/conceal-core](https://github.com/ConcealNetwork/conceal-core)
-- Discord: [https://discord.gg/YbpHVSd](https://discord.gg/YbpHVSd)
-- Twitter: [https://twitter.com/ConcealNetwork](https://twitter.com/ConcealNetwork)
-- Medium: [https://medium.com/@ConcealNetwork](https://medium.com/@ConcealNetwork)
-- Reddit: [https://www.reddit.com/r/ConcealNetwork/](https://www.reddit.com/r/ConcealNetwork/)
-- Bitcoin Talk: [https://bitcointalk.org/index.php?topic=4515873](https://bitcointalk.org/index.php?topic=4515873)
-- Paperwallet: [https://paperwallet.conceal.network/](https://paperwallet.conceal.network/)
+- Web: [Soon to come](Soon to come)
+- GitHub: [https://github.com/zooteld/Trader.git](https://github.com/zooteld/Trader.git)
+- Discord: [Soon to come](soon to come)
+- Reddit: [Soon to come](Soon to come)
+- Bitcoin Talk: [Soon to come](Soon to come)
+- Paperwallet: [Soon to come](Soon to come)
 
-## Compiling Conceal from source
+## Compiling Trader from source
 
 ### Linux / Ubuntu
 
 ##### Prerequisites
 
-- You will need the following dependencies to build the Conceal CLI: boost, cmake, git, gcc, g++, python, and make.
+- You will need the following dependencies to build the Trader CLI: boost, cmake, git, gcc, g++, python, and make.
 - On Ubuntu: `sudo apt-get install -y build-essential python-dev gcc g++ git cmake libboost-all-dev`
 
 #### Building
 
-- `git clone https://github.com/ConcealNetwork/conceal-core`
-- `cd conceal-core`
+- `git clone https://github.com/zooteld/Trader.git
+- `cd trader`
 - `mkdir build && cd $_`
 - `cmake ..`
 - `make`
@@ -59,8 +49,8 @@ If the build is successful the binaries will be in the src folder.
 
 - From the start menu, open 'x64 Native Tools Command Prompt for vs2017' or run "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\Tools\VsMSBuildCmd.bat" from any command prompt.
 
-- `git clone https://github.com/ConcealNetwork/conceal-core`
-- `cd conceal-core`
+- `git clone https://github.com/zooteld/Trader.git`
+- `cd trader`
 - `mkdir build`
 - `cd build`
 - `cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..` (Or your boost installed dir.)
@@ -87,11 +77,11 @@ After that, proceed with installing dependencies:
 $ brew install git python cmake gcc boost
 ```
 
-When all dependencies are installed, build Conceal Core binaries:
+When all dependencies are installed, build Trader Core binaries:
 
 ```bash
-$ git clone https://github.com/ConcealNetwork/conceal-core
-$ cd conceal-core
+$ git clone https://github.com/zooteld/Trader.git
+$ cd trader
 $ mkdir build && cd $_
 $ cmake ..
 $ make

@@ -500,8 +500,8 @@ bool processServerAliasResponse(const std::string& s, std::string& address) {
   try {
   //   
   // Courtesy of Monero Project
-		// make sure the txt record has "oa1:ccx" and find it
-		auto pos = s.find("oa1:ccx");
+		// make sure the txt record has "oa1:W2W" and find it
+		auto pos = s.find("oa1:w2w");
 		if (pos == std::string::npos)
 			return false;
 		// search from there to find "recipient_address="
@@ -721,15 +721,16 @@ bool simple_wallet::init(const boost::program_options::variables_map& vm) {
   if (m_generate_new.empty() && m_wallet_file_arg.empty()) {
     std::cout << "  " << ENDL
     << "  " << ENDL
-    << "      @@@@@@   .@@@@@@&   .@@@   ,@@,   &@@@@@  @@@@@@@@    &@@@*    @@@        " << ENDL
-    << "    &@@@@@@@  @@@@@@@@@@  .@@@@  ,@@,  @@@@@@@  @@@@@@@@    @@@@@    @@@        " << ENDL
-    << "    @@@       @@@    @@@* .@@@@@ ,@@, &@@*      @@@        ,@@#@@.   @@@        " << ENDL
-    << "    @@@       @@@    (@@& .@@@@@,,@@, @@@       @@@...     @@@ @@@   @@@        " << ENDL
-    << "    @@@      .@@&    /@@& .@@*@@@.@@, @@@       @@@@@@     @@@ @@@   @@@        " << ENDL
-    << "    @@@       @@@    #@@  .@@( @@@@@, @@@       @@@       @@@/ #@@&  @@@        " << ENDL
-    << "    @@@       @@@    @@@, .@@( &@@@@, &@@*      @@@       @@@@@@@@@  @@@        " << ENDL
-    << "    %@@@@@@@  @@@@@@@@@@  .@@(  @@@@,  @@@@@@@  @@@@@@@@ .@@@   @@@. @@@@@@@@#  " << ENDL
-    << "      @@@@@@    @@@@@@(   .@@(   @@@,    @@@@@  @@@@@@@@ @@@    (@@@ @@@@@@@@#  " << ENDL
+	  << "+==============================================================================+" << ENDL
+      << "| 888       888  .d8888b.  888       888       .d8888b.           d8b          |" << ENDL
+      << "| 888   o   888 d88P  Y88b 888   o   888      d88P  Y88b          Y8P          |" << ENDL
+      << "| 888  d8b  888        888 888  d8b  888      888    888                       |" << ENDL
+      << "| 888 d888b 888      .d88P 888 d888b 888      888         .d88b.  888 88888b.  |" << ENDL
+      << "| 888d88888b888  .od888P"  888d88888b888      888        d88""88b 888 888 "88b |" << ENDL
+      << "| 88888P Y88888 d88P"      88888P Y88888      888    888 888  888 888 888  888 |" << ENDL
+      << "| 8888P   Y8888 888"       8888P   Y8888      Y88b  d88P Y88..88P 888 888  888 |" << ENDL
+      << "| 888P     Y888 888888888  888P     Y888       "Y8888P"   "Y88P"  888 888  888 |" << ENDL
+      << "+==============================================================================+" << ENDL 
     << "  " << ENDL
     << "  " << ENDL;
     std::cout << "How you would like to proceed?\n\n\t[O]pen an existing wallet\n\t[G]enerate a new wallet file\n\t[I]mport wallet from keys\n\t[M]nemonic seed import\n\t[E]xit.\n\n";
@@ -1995,12 +1996,12 @@ int main(int argc, char* argv[]) {
       CryptoNote::Currency tmp_currency = CryptoNote::CurrencyBuilder(logManager).currency();
       CryptoNote::simple_wallet tmp_wallet(dispatcher, tmp_currency, logManager);
 
-      std::cout << "Conceal Wallet v" << PROJECT_VERSION_LONG << std::endl;
+      std::cout << "W2W Wallet v" << PROJECT_VERSION_LONG << std::endl;
       std::cout << "Usage: concealwallet [--wallet-file=<file>|--generate-new-wallet=<file>] [--daemon-address=<host>:<port>] [<COMMAND>]";
       std::cout << desc_all << '\n' << tmp_wallet.get_commands_str();
       return false;
     } else if (command_line::get_arg(vm, command_line::arg_version))  {
-      std::cout << "Conceal Wallet v" << PROJECT_VERSION_LONG << std::endl;
+      std::cout << "W2W Wallet v" << PROJECT_VERSION_LONG << std::endl;
       return false;
     }
 
@@ -2022,7 +2023,7 @@ int main(int argc, char* argv[]) {
 
   logManager.configure(buildLoggerConfiguration(logLevel, Common::ReplaceExtenstion(argv[0], ".log")));
 
-  logger(INFO, BRIGHT_GREEN) << "Conceal Wallet v" << PROJECT_VERSION_LONG;
+  logger(INFO, BRIGHT_GREEN) << "W2W Wallet v" << PROJECT_VERSION_LONG;
 
   CryptoNote::Currency currency = CryptoNote::CurrencyBuilder(logManager).
     testnet(command_line::get_arg(vm, arg_testnet)).currency();

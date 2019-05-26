@@ -101,7 +101,7 @@ const uint64_t UPGRADE_HEIGHT_V3															= 12750; /* Cryptonight-Fast */
 const uint64_t UPGRADE_HEIGHT_V4															= 45000; /* MixIn 2 */
 const uint64_t UPGRADE_HEIGHT_V5															= 98160; /* Deposits 2.0, Investments 1.0 */
 const uint64_t UPGRADE_HEIGHT_V6															= 104200; /* LWMA3 */
-const uint64_t UPGRADE_HEIGHT_V7															= 195765; /* Cryptoight Conceal */
+const uint64_t UPGRADE_HEIGHT_V7															= 195765; /* Cryptoight W2W */
 const unsigned UPGRADE_VOTING_THRESHOLD														= 90; // percent
 const size_t   UPGRADE_VOTING_WINDOW														= EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; 
 const size_t   UPGRADE_WINDOW																= EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; 
@@ -122,9 +122,9 @@ const char     MINER_CONFIG_FILE_NAME[]                      								= "miner_co
 const uint64_t START_BLOCK_REWARD															= (UINT64_C(5000) * parameters::POINT); // start reward (Consensus I)
 const uint64_t FOUNDATION_TRUST																= (UINT64_C(12000000) * parameters::COIN); // locked funds to secure network  (Consensus II)
 const uint64_t MAX_BLOCK_REWARD					= (UINT64_C(20) * parameters::COIN); // max reward (Consensus I)
-const uint64_t REWARD_INCREASE_INTERVAL				= (UINT64_C(21900)); // aprox. 1 month (+ 0.25 CCX increment per month)
+const uint64_t REWARD_INCREASE_INTERVAL				= (UINT64_C(21900)); // aprox. 1 month (+ 0.25 W2W increment per month)
 
-const char     CRYPTONOTE_NAME[]                             	= "trader";
+const char     CRYPTONOTE_NAME[]                             	= "w2w";
 const char     GENESIS_COINBASE_TX_HEX[]			= "010a01ff0001c096b102029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210130fe3cb657b6685eeb786e8740acc45f1d219b7c4ace1b2d82c4fb8fc30eaa73";
 const uint32_t GENESIS_NONCE                         	        = 10000;
 const uint64_t GENESIS_TIMESTAMP				= 1527078920;
@@ -135,7 +135,7 @@ const uint8_t  BLOCK_MAJOR_VERSION_1				=  1; // (Consensus I)
 const uint8_t  BLOCK_MAJOR_VERSION_2				=  2; // (Consensus II)
 const uint8_t  BLOCK_MAJOR_VERSION_3				=  3; // (Consensus III)
 const uint8_t  BLOCK_MAJOR_VERSION_4				=  4; // LWMA3
-const uint8_t  BLOCK_MAJOR_VERSION_7				=  7; /* Cryptonight Conceal */
+const uint8_t  BLOCK_MAJOR_VERSION_7				=  7; /* Cryptonight W2W */
 const uint8_t  BLOCK_MINOR_VERSION_0				=  0;
 const uint8_t  BLOCK_MINOR_VERSION_1				=  1;
 
@@ -171,7 +171,7 @@ const char     P2P_STAT_TRUSTED_PUB_KEY[]			= "0x9fd06a0";
 // Seed Nodes
 const std::initializer_list<const char*> SEED_NODES = {
 		"204.48.29.243:21006", // NYC
-		"157.230.164.248:21016", // SanFran
+		"157.230.164.248:21006", // SanFran
 
 };
 

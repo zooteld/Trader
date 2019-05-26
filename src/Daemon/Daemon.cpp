@@ -105,7 +105,7 @@ void print_genesis_tx_hex() {
  //	CryptoNote::BinaryArray txb = CryptoNote::toBinaryArray(tx);
  //	std::string tx_hex = Common::toHex(txb);
 
- //	std::cout << "Modify this line into your concealX configuration file as is:  " << std::endl;
+ //	std::cout << "Modify this line into your w2w configuration file as is:  " << std::endl;
  //	std::cout << "const char GENESIS_COINBASE_TX_HEX[] = \"" << tx_hex << "\";" << std::endl;
 //   }
 //   return;

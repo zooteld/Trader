@@ -535,18 +535,18 @@ bool CryptoNoteProtocolHandler::on_connection_synchronized() {
   if (m_synchronized.compare_exchange_strong(val_expected, true)) {
     logger(Logging::INFO) << ENDL << "********************************************************************************" << ENDL
       << "  " << ENDL
-	  << "+==============================================================================+" << ENDL
-      << "| 888       888   d8888b   888       888        d8888b            d8b          |" << ENDL
-      << "| 888   o   888 d88P  Y88b 888   o   888      d88P  Y88b          Y8P          |" << ENDL
-      << "| 888  d8b  888        888 888  d8b  888      888    888                       |" << ENDL
-      << "| 888 d888b 888       d88P 888 d888b 888      888          d88b   888 88888b   |" << ENDL
-      << "| 888d88888b888   od888P   888d88888b888      888        d88  88b 888 888  88b |" << ENDL
-      << "| 88888P Y88888 d88P       88888P Y88888      888    888 888  888 888 888  888 |" << ENDL
-      << "| 8888P   Y8888 888        8888P   Y8888      Y88b  d88P Y88  88P 888 888  888 |" << ENDL
-      << "| 888P     Y888 888888888  888P     Y888        Y8888P     Y88P   888 888  888 |" << ENDL
-      << "+==============================================================================+" << ENDL 
+	  << "+========================================+" << ENDL
+      << "| 888       888   d8888b   888       888 |" << ENDL
+      << "| 888   o   888 d88P  Y88b 888   o   888 |" << ENDL
+      << "| 888  d8b  888        888 888  d8b  888 |" << ENDL
+      << "| 888 d888b 888       d88P 888 d888b 888 |" << ENDL
+      << "| 888d88888b888   od888P   888d88888b888 |" << ENDL
+      << "| 88888P Y88888 d88P       88888P Y88888 |" << ENDL
+      << "| 8888P   Y8888 888        8888P   Y8888 |" << ENDL
+      << "| 888P     Y888 888888888  888P     Y888 |" << ENDL
+      << "+========================================+" << ENDL 
       << "  " << ENDL
-      << "You are now synchronized with the W2W network. You may now start concealwallet." << ENDL
+      << "You are now synchronized with the W2W network. You may now start w2wwallet." << ENDL
       << "Please note, that the blockchain will be saved only after you quit the daemon" << ENDL
       << "with the \"exit\" command or if you use the \"save\" command." << ENDL
       << "Otherwise, you will possibly need to synchronize the blockchain again." << ENDL

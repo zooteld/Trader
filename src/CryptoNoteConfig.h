@@ -1,11 +1,10 @@
 // Copyright (c) 2011-2017 The Cryptonote Developers
 // Copyright (c) 2017-2018 The Circle Foundation & Conceal Devs
 // Copyright (c) 2018-2019 Conceal Network & Conceal Devs
-// Go Team Go W2W Devs
-
 //
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
+//Same as CCX
 
 #pragma once
 
@@ -18,7 +17,7 @@ namespace parameters {
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER													= 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE												= 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE														= 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX										= 0x44ad; /* w2w7 address prefix */
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX										= 0x384ad; /* W2Wc address prefix */
 const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW											= 10; /* 20 minutes */
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT											= 60 * 60 * 2; /* two hours */
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT_V1										= 360; /* changed for LWMA3 */
@@ -27,27 +26,25 @@ const uint64_t CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE											= 10; /* 20 minutes
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW											= 30;
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V1											= 11; /* changed for LWMA3 */
 
-const uint64_t MONEY_SUPPLY																	= UINT64_C(-1); /* max supply: 200M (Consensus II) */
-
-const uint64_t EMISSION_SPEED_FACTOR														= 23; /* TESTING*/
+const uint64_t MONEY_SUPPLY																	= UINT64_C(200000000000000); /* max supply: 200M (Consensus II) */
 
 const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX													= 0;
 const size_t   ZAWY_DIFFICULTY_FIX															= 1;
 const uint8_t  ZAWY_DIFFICULTY_BLOCK_VERSION												= 0;
 
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW												= 100;
-const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE									= 20000; /* size of block in bytes, after which reward is calculated using block size */
+const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE									= 100000; /* size of block in bytes, after which reward is calculated using block size */
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE										= 600;
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT												= 6;
 
 const uint64_t POINT																		= UINT64_C(1000); 
 const uint64_t COIN																			= UINT64_C(1000000); /* smallest atomic unit */
-const uint64_t MINIMUM_FEE																	= UINT64_C(100); /* 0.0000100 W2W */
-const uint64_t MINIMUM_FEE_V1																= UINT64_C(1000); /* 0.0001000 W2W */
-const uint64_t MINIMUM_FEE_BANKING															= UINT64_C(10000); /* 0.0010000 W2W */
+const uint64_t MINIMUM_FEE																	= UINT64_C(10); /* 0.000010 W2W */
+const uint64_t MINIMUM_FEE_V1																= UINT64_C(100); /* 0.000100 W2W */
+const uint64_t MINIMUM_FEE_BANKING															= UINT64_C(1000); /* 0.001000 W2W */
 const uint64_t DEFAULT_DUST_THRESHOLD														= UINT64_C(10); /* 0.000010 W2W */  
 
-const uint64_t DIFFICULTY_TARGET															= 30; /* two minutes */
+const uint64_t DIFFICULTY_TARGET															= 120; /* two minutes */
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY											= 24 * 60 * 60 / DIFFICULTY_TARGET; /* 720 blocks */
 const size_t   DIFFICULTY_WINDOW															= EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; 	
 const size_t   DIFFICULTY_WINDOW_V1															= DIFFICULTY_WINDOW;
@@ -101,7 +98,7 @@ const uint64_t UPGRADE_HEIGHT_V3															= 12750; /* Cryptonight-Fast */
 const uint64_t UPGRADE_HEIGHT_V4															= 45000; /* MixIn 2 */
 const uint64_t UPGRADE_HEIGHT_V5															= 98160; /* Deposits 2.0, Investments 1.0 */
 const uint64_t UPGRADE_HEIGHT_V6															= 104200; /* LWMA3 */
-const uint64_t UPGRADE_HEIGHT_V7															= 195765; /* Cryptoight W2W */
+const uint64_t UPGRADE_HEIGHT_V7															= 195765; /* Cryptoight Conceal */
 const unsigned UPGRADE_VOTING_THRESHOLD														= 90; // percent
 const size_t   UPGRADE_VOTING_WINDOW														= EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; 
 const size_t   UPGRADE_WINDOW																= EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; 
@@ -122,10 +119,10 @@ const char     MINER_CONFIG_FILE_NAME[]                      								= "miner_co
 const uint64_t START_BLOCK_REWARD															= (UINT64_C(5000) * parameters::POINT); // start reward (Consensus I)
 const uint64_t FOUNDATION_TRUST																= (UINT64_C(12000000) * parameters::COIN); // locked funds to secure network  (Consensus II)
 const uint64_t MAX_BLOCK_REWARD					= (UINT64_C(20) * parameters::COIN); // max reward (Consensus I)
-const uint64_t REWARD_INCREASE_INTERVAL				= (UINT64_C(21900)); // aprox. 1 month (+ 0.25 W2W increment per month)
+const uint64_t REWARD_INCREASE_INTERVAL				= (UINT64_C(21900)); // aprox. 1 month (+ 0.25 CCX increment per month)
 
-const char     CRYPTONOTE_NAME[]                             	= "w2w";
-const char     GENESIS_COINBASE_TX_HEX[]			= "010a01ff0001c096b102029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210130fe3cb657b6685eeb786e8740acc45f1d219b7c4ace1b2d82c4fb8fc30eaa73";
+const char     CRYPTONOTE_NAME[]                             	= "W2W";
+const char     GENESIS_COINBASE_TX_HEX[]			= "";
 const uint32_t GENESIS_NONCE                         	        = 10000;
 const uint64_t GENESIS_TIMESTAMP				= 1527078920;
 
@@ -135,7 +132,7 @@ const uint8_t  BLOCK_MAJOR_VERSION_1				=  1; // (Consensus I)
 const uint8_t  BLOCK_MAJOR_VERSION_2				=  2; // (Consensus II)
 const uint8_t  BLOCK_MAJOR_VERSION_3				=  3; // (Consensus III)
 const uint8_t  BLOCK_MAJOR_VERSION_4				=  4; // LWMA3
-const uint8_t  BLOCK_MAJOR_VERSION_7				=  7; /* Cryptonight W2W */
+const uint8_t  BLOCK_MAJOR_VERSION_7				=  7; /* Cryptonight Conceal */
 const uint8_t  BLOCK_MINOR_VERSION_0				=  0;
 const uint8_t  BLOCK_MINOR_VERSION_1				=  1;
 
@@ -157,7 +154,7 @@ const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT			= 1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT			= 5000;
 
 const size_t   P2P_CONNECTION_MAX_WRITE_BUFFER_SIZE		= 64 * 1024 * 1024; // 64MB
-const uint32_t P2P_DEFAULT_CONNECTIONS_COUNT			= 2;
+const uint32_t P2P_DEFAULT_CONNECTIONS_COUNT			= 8;
 const size_t   P2P_DEFAULT_WHITELIST_CONNECTIONS_PERCENT	= 70; // percent
 const uint32_t P2P_DEFAULT_HANDSHAKE_INTERVAL			= 60; // seconds
 const uint32_t P2P_DEFAULT_PACKET_MAX_SIZE			= 50000000; // 50000000 bytes maximum packet size
@@ -166,7 +163,7 @@ const uint32_t P2P_DEFAULT_CONNECTION_TIMEOUT			= 5000; // 5 seconds
 const uint32_t P2P_DEFAULT_PING_CONNECTION_TIMEOUT		= 2000; // 2 seconds
 const uint64_t P2P_DEFAULT_INVOKE_TIMEOUT			= 60 * 2 * 1000; // 2 minutes
 const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT		= 5000; // 5 seconds
-const char     P2P_STAT_TRUSTED_PUB_KEY[]			= "";
+const char     P2P_STAT_TRUSTED_PUB_KEY[]			= "f7061e9a5f0d30549afde49c9bfbaa52ac60afdc46304642b460a9ea34bf7a4e";
 
 // Seed Nodes
 const std::initializer_list<const char*> SEED_NODES = {
@@ -187,7 +184,6 @@ __attribute__((unused))
 // Blockchain Checkpoints:
 // {<block height>, "<block hash>"},
 const std::initializer_list<CheckpointData> CHECKPOINTS = {
-
 
 };
 

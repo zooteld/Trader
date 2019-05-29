@@ -94,11 +94,11 @@ const size_t   FUSION_TX_MIN_IN_OUT_COUNT_RATIO												= 4;
 
 const uint64_t UPGRADE_HEIGHT																= 1;
 const uint64_t UPGRADE_HEIGHT_V2															= 1;
-const uint64_t UPGRADE_HEIGHT_V3															= 12750; /* Cryptonight-Fast */
-const uint64_t UPGRADE_HEIGHT_V4															= 45000; /* MixIn 2 */
-const uint64_t UPGRADE_HEIGHT_V5															= 98160; /* Deposits 2.0, Investments 1.0 */
-const uint64_t UPGRADE_HEIGHT_V6															= 104200; /* LWMA3 */
-const uint64_t UPGRADE_HEIGHT_V7															= 195765; /* Cryptoight Conceal */
+const uint64_t UPGRADE_HEIGHT_V3															= 2; /* Cryptonight-Fast */
+const uint64_t UPGRADE_HEIGHT_V4															= 3; /* MixIn 2 */
+const uint64_t UPGRADE_HEIGHT_V5															= 4; /* Deposits 2.0, Investments 1.0 */
+const uint64_t UPGRADE_HEIGHT_V6															= 5; /* LWMA3 */
+const uint64_t UPGRADE_HEIGHT_V7															= 6; /* Cryptoight Conceal */
 const unsigned UPGRADE_VOTING_THRESHOLD														= 90; // percent
 const size_t   UPGRADE_VOTING_WINDOW														= EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; 
 const size_t   UPGRADE_WINDOW																= EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; 
@@ -122,7 +122,7 @@ const uint64_t MAX_BLOCK_REWARD					= (UINT64_C(20) * parameters::COIN); // max 
 const uint64_t REWARD_INCREASE_INTERVAL				= (UINT64_C(21900)); // aprox. 1 month (+ 0.25 CCX increment per month)
 
 const char     CRYPTONOTE_NAME[]                             	= "W2W";
-const char     GENESIS_COINBASE_TX_HEX[]			= "010a01ff0001c096b102029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101e25d0c712913a475904433ea12fefa2a8d0082bcc685fa29636eb1e7b1eb3842";
+const char     GENESIS_COINBASE_TX_HEX[]			= "";
 const uint32_t GENESIS_NONCE                         	        = 10000;
 const uint64_t GENESIS_TIMESTAMP				= 1527078920;
 
@@ -163,7 +163,7 @@ const uint32_t P2P_DEFAULT_CONNECTION_TIMEOUT			= 5000; // 5 seconds
 const uint32_t P2P_DEFAULT_PING_CONNECTION_TIMEOUT		= 2000; // 2 seconds
 const uint64_t P2P_DEFAULT_INVOKE_TIMEOUT			= 60 * 2 * 1000; // 2 minutes
 const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT		= 5000; // 5 seconds
-const char     P2P_STAT_TRUSTED_PUB_KEY[]			= "f7061e9a5f0d30549afde49c9bfbaa52ac60afdc46304642b460a9ea34bf7a4e";
+const char     P2P_STAT_TRUSTED_PUB_KEY[]			= "";
 
 // Seed Nodes
 const std::initializer_list<const char*> SEED_NODES = {

@@ -122,7 +122,7 @@ const uint64_t MAX_BLOCK_REWARD					= (UINT64_C(20) * parameters::COIN); // max 
 const uint64_t REWARD_INCREASE_INTERVAL				= (UINT64_C(21900)); // aprox. 1 month (+ 0.25 CCX increment per month)
 
 const char     CRYPTONOTE_NAME[]                             	= "W2W";
-const char     GENESIS_COINBASE_TX_HEX[]			= "";
+const char     GENESIS_COINBASE_TX_HEX[]			= "010a01ff0001c096b102029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101e25d0c712913a475904433ea12fefa2a8d0082bcc685fa29636eb1e7b1eb3842";
 const uint32_t GENESIS_NONCE                         	        = 10000;
 const uint64_t GENESIS_TIMESTAMP				= 1527078920;
 

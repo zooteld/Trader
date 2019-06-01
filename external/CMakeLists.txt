@@ -12,3 +12,4 @@ if(MSVC)
 elseif(NOT MSVC)
   set_property(TARGET upnpc-static APPEND_STRING PROPERTY COMPILE_FLAGS " -Wno-undef -Wno-unused-result -Wno-unused-value")
 endif()
+

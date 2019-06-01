@@ -26,7 +26,7 @@ const uint64_t CRYPTONOTE_DEFAULT_TX_SPENDABLE_AGE											= 10; /* 20 minutes
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW											= 30;
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW_V1											= 11; /* changed for LWMA3 */
 
-const uint64_t MONEY_SUPPLY																	= UINT64_C(100000000000000); /* max supply: 200M (Consensus II) */
+const uint64_t MONEY_SUPPLY																	= UINT64_C(100000000000000); /* max supply: 100M (Consensus II) */
 
 const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX													= 0;
 const size_t   ZAWY_DIFFICULTY_FIX															= 1;

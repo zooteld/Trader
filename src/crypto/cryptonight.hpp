@@ -246,7 +246,6 @@ void cryptonight_hash(const void* input, size_t len, void* output, cn_context& c
 	constexpr uint32_t ITER = cn_select_iter<ALGO>();
 	constexpr bool MONERO_TWEAK = ALGO == CRYPTONIGHT_FAST_V8;
 	constexpr bool CONC_VARIANT = ALGO == CRYPTONIGHT_CONCEAL;
-	constexpr bool CONC_VARIANT = ALGO == CRYPTONIGHT_W2W;
 
 	if(MONERO_TWEAK && len < 43)
 	{

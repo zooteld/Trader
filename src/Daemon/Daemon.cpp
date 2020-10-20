@@ -105,7 +105,7 @@ void print_genesis_tx_hex() {
  //	CryptoNote::BinaryArray txb = CryptoNote::toBinaryArray(tx);
  //	std::string tx_hex = Common::toHex(txb);
 
- //	std::cout << "Modify this line into your concealX configuration file as is:  " << std::endl;
+ //	std::cout << "Modify this line into your w2w configuration file as is:  " << std::endl;
  //	std::cout << "const char GENESIS_COINBASE_TX_HEX[] = \"" << tx_hex << "\";" << std::endl;
 //   }
 //   return;
@@ -131,21 +131,21 @@ JsonValue buildLoggerConfiguration(Level level, const std::string& logfile) {
 }
 
 void renameDataDir() {
-  std::string concealXDir = Tools::getDefaultDataDirectory();
-  boost::filesystem::path concealXDirPath(concealXDir);
-  if (boost::filesystem::exists(concealXDirPath)) {
+  std::string w2wDir = Tools::getDefaultDataDirectory();
+  boost::filesystem::path w2wDirPath(w2wDir);
+  if (boost::filesystem::exists(w2wDirPath)) {
     return;
   }
 
-  std::string dataDirPrefix = concealXDir.substr(0, concealXDir.size() + 1 - sizeof(CRYPTONOTE_NAME));
+  std::string dataDirPrefix = w2wDir.substr(0, w2wDir.size() + 1 - sizeof(CRYPTONOTE_NAME));
   boost::filesystem::path cediDirPath(dataDirPrefix + "BXC");
 
   if (boost::filesystem::exists(cediDirPath)) {
-    boost::filesystem::rename(cediDirPath, concealXDirPath);
+    boost::filesystem::rename(cediDirPath, w2wDirPath);
   } else {
     boost::filesystem::path BcediDirPath(dataDirPrefix + "Bcedi");
     if (boost::filesystem::exists(boost::filesystem::path(BcediDirPath))) {
-		boost::filesystem::rename(BcediDirPath, concealXDirPath);
+		boost::filesystem::rename(BcediDirPath, w2wDirPath);
     }
   }
 }
@@ -250,7 +250,7 @@ int main(int argc, char* argv[])
     // configure logging
     logManager.configure(buildLoggerConfiguration(cfgLogLevel, cfgLogFile));
 
-    logger(INFO, BRIGHT_YELLOW) << "Conceal v" << PROJECT_VERSION_LONG;
+    logger(INFO, BRIGHT_YELLOW) << "W2W V" << PROJECT_VERSION_LONG;
 
     if (command_line_preprocessor(vm, logger)) {
       return 0;

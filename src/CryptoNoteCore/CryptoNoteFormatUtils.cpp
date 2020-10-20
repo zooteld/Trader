@@ -489,7 +489,7 @@ bool get_block_longhash(cn_context &context, const Block& b, Hash& res) {
   }
 
 if (b.majorVersion >= 7) {
-    cn_conceal_slow_hash_v0(context, bd.data(), bd.size(), res);
+    cn_w2w_slow_hash_v0(context, bd.data(), bd.size(), res);
   } else if (b.majorVersion >= 3) {
     cn_fast_slow_hash_v1(context, bd.data(), bd.size(), res);
   } else {

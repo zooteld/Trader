@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2017 The Cryptonote developers
 // Copyright (c) 2017-2018 The Circle Foundation & Conceal Devs
 // Copyright (c) 2018-2019 Conceal Network & Conceal Devs
+// Copyright (c) 2019-2020 The Wallet 2 Wallet Team
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -1675,7 +1676,7 @@ namespace PaymentService
           return make_error_code(CryptoNote::error::DEPOSIT_TERM_TOO_BIG);
         }
 
-        /* The minimum deposit amount is 1 CCX */
+        /* The minimum deposit amount is 1 W2W */
         if (amount < CryptoNote::parameters::DEPOSIT_MIN_AMOUNT)
         {
           return make_error_code(CryptoNote::error::DEPOSIT_AMOUNT_TOO_SMALL);

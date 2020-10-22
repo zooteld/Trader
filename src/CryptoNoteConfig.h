@@ -1,6 +1,7 @@
 // Copyright (c) 2011-2017 The Cryptonote Developers
 // Copyright (c) 2017-2018 The Circle Foundation & Conceal Devs
 // Copyright (c) 2018-2019 Conceal Network & Conceal Devs
+// Copyright (c) 2019-2020 The Wallet 2 Wallet Team
 //
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -40,11 +41,11 @@ namespace CryptoNote
 
 		const uint64_t POINT = UINT64_C(1000);
 		const uint64_t COIN = UINT64_C(1000000);			  /* smallest atomic unit */
-		const uint64_t MINIMUM_FEE = UINT64_C(10);			  /* 0.000010 CCX */
-		const uint64_t MINIMUM_FEE_V1 = UINT64_C(100);		  /* 0.000100 CCX */
-		const uint64_t MINIMUM_FEE_V2 = UINT64_C(1000);		  /* 0.001000 CCX */
-		const uint64_t MINIMUM_FEE_BANKING = UINT64_C(1000);  /* 0.001000 CCX */
-		const uint64_t DEFAULT_DUST_THRESHOLD = UINT64_C(10); /* 0.000010 CCX */
+		const uint64_t MINIMUM_FEE = UINT64_C(10);			  /* 0.000010 W2W */
+		const uint64_t MINIMUM_FEE_V1 = UINT64_C(100);		  /* 0.000100 W2W */
+		const uint64_t MINIMUM_FEE_V2 = UINT64_C(1000);		  /* 0.001000 W2W */
+		const uint64_t MINIMUM_FEE_BANKING = UINT64_C(1000);  /* 0.001000 W2W */
+		const uint64_t DEFAULT_DUST_THRESHOLD = UINT64_C(10); /* 0.000010 W2W */
 
 		const uint64_t DIFFICULTY_TARGET = 120;												 /* two minutes */
 		const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY = 24 * 60 * 60 / DIFFICULTY_TARGET; /* 720 blocks */
@@ -129,7 +130,7 @@ namespace CryptoNote
 	const uint64_t START_BLOCK_REWARD = (UINT64_C(5000) * parameters::POINT);  // start reward (Consensus I)
 	const uint64_t FOUNDATION_TRUST = (UINT64_C(12000000) * parameters::COIN); // locked funds to secure network  (Consensus II)
 	const uint64_t MAX_BLOCK_REWARD = (UINT64_C(15) * parameters::COIN);	   // max reward (Consensus I)
-	const uint64_t REWARD_INCREASE_INTERVAL = (UINT64_C(21900));			   // aprox. 1 month (+ 0.25 CCX increment per month)
+	const uint64_t REWARD_INCREASE_INTERVAL = (UINT64_C(21900));			   // aprox. 1 month (+ 0.25 W2W increment per month)
 
 	const char CRYPTONOTE_NAME[] = "W2W";
 	const char GENESIS_COINBASE_TX_HEX[] = "010a01ff0001c096b102029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101415b100f9c9c6c42bcdb54b3ef7164311571505fe526ab708c550ab4fbb023ad";

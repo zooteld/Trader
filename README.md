@@ -1,6 +1,6 @@
 # W2W (CLI)
 Latest Release: v1.0
-Maintained by Team-COD.
+Maintained by the W2W Team.
 
 ## Information
 W2W is a decentralized banking platform with encrypted messages and own privacy protected cryptocurrency.
@@ -10,7 +10,7 @@ W2W is based on the Cryptonote protocol and runs on a secure peer-to-peer networ
 W2W is open-source, community driven and truly decentralized. No one owns it, everyone can take part.
 
 ## Resources
-- Web: [Soon to come](Soon to come)
+- Web: [https://w2wcoin.org](w2wcoin.org)
 - GitHub: [https://github.com/zooteld/w2w.git](https://github.com/zooteld/w2w.git)
 - Discord: [Soon to come](soon to come)
 - Reddit: [Soon to come](Soon to come)
@@ -54,7 +54,7 @@ If the build is successful the binaries will be in the src folder.
 - `mkdir build`
 - `cd build`
 - `cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..` (Or your boost installed dir.)
-- open the w2w.sln with Microsoft Visual studio 2017 and change the build to release then build the project.
+- `build the W2W.sln release with Microsoft Visual Studio 2017`
 
 If the build is successful the binaries will be in the src/Release folder.
 

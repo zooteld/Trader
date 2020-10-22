@@ -1,6 +1,7 @@
 // Copyright (c) 2012-2016, The CryptoNote developers, The Bytecoin developers
 // Copyright (c) 2014-2016 XDN developers
 // Copyright (c) 2016-2018 Karbowanec developers
+// Copyright (c) 2019-2020 The Wallet 2 Wallet Team
 //
 // This file is part of Karbo.
 //

@@ -1,4 +1,5 @@
 // Copyright (c) 2018, Ryo Currency Project
+// Copyright (c) 2019-2020 The Wallet 2 Wallet Team
 //
 // Portions of this file are available under BSD-3 license. Please see ORIGINAL-LICENSE for details
 // All rights reserved.

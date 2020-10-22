@@ -54,7 +54,7 @@ If the build is successful the binaries will be in the src folder.
 - `mkdir build`
 - `cd build`
 - `cmake -G "Visual Studio 15 2017 Win64" -DBOOST_LIBRARYDIR:PATH=c:/local/boost_1_67_0 ..` (Or your boost installed dir.)
-- `msbuild w2w.sln /p:Configuration=Release /m`
+- open the w2w.sln with Microsoft Visual studio 2017 and change the build to release then build the project.
 
 If the build is successful the binaries will be in the src/Release folder.
 
